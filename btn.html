@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{background-color: #777;}
+    a.request{
+      display: inline-block;
+      border: 1px solid black;
+      padding: 10px 50px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+    a.request em{
+      display: inline-block;
+      width: 29px;
+      height: 11px;
+      border: 1px solid black;
+      background: url(images/more_arrow.png) no-repeat -29px 0;
+      margin-left: 15px;
+      transition: .5s;
+    }
+    a.request::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: -1;
+      width: 180%;
+      height: 200%;
+      transform: skewX(-35deg);
+      left: -200%;
+      top: -5px;
+      transition: 0.5s;
+    }
+    a.request:hover{
+      color: #4c9280;
+    }
+    a.request:hover::before{
+      left: -30%;
+    }
+    a.request:hover em{
+      background-position: 0 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#none" class="request">신청하기<em></em></a>
+</body>
+</html>
