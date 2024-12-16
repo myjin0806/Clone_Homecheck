@@ -6,7 +6,7 @@
 > - 2024.08.26 - 2024.08.29(4일)
 
 ### 배포주소
-> [HomeCheck](https://myjin0806.github.io/Clone_Homecheck/)
+> [HomeCheck](https://myjin0806.github.io/clone_homecheck/)
 
 
 |  DESKTOP                                                                                                              |
